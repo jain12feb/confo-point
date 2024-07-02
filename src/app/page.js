@@ -47,17 +47,14 @@ const Home = () => {
           </p>
           <div className="my-8 text-center">
             <SignedOut>
-              <SignInButton
-                mode="modal"
-                children={
-                  <Button
-                    size="lg"
-                    className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md shadow-md mr-4 transition-colors duration-300"
-                  >
-                    Get Started <RocketIcon className="w-5 h-5 ml-2" />
-                  </Button>
-                }
-              />
+              <SignInButton mode="modal">
+                <Button
+                  size="lg"
+                  className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md shadow-md mr-4 transition-colors duration-300"
+                >
+                  Get Started <RocketIcon className="w-5 h-5 ml-2" />
+                </Button>
+              </SignInButton>
             </SignedOut>
           </div>
           <p className="text-justify md:text-center text-lg md:text-xl mb-8 leading-relaxed">
