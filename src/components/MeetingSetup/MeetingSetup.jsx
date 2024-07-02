@@ -46,9 +46,11 @@ const MeetingSetup = ({ setIsSetupComplete, desc, code, isCreatedByMe }) => {
   if (callTimeNotArrived)
     return (
       <Alert
-        title={`Your Meeting has not started yet. It is scheduled for ${moment(
+        title={`Your Meeting has not started yet. Your session on ${desc} is scheduled for ${moment(
           callStartsAt
-        ).format("LLLL")}`}
+        ).format(
+          "LLLL"
+        )}. You are early! You can join the session once host started the meeting.`}
       />
     );
 
